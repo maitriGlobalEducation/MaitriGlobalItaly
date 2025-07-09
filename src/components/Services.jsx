@@ -50,10 +50,17 @@ const iconMap = [
 ];
 
 const Services = () => (
-  <section id="services" className="w-full min-h-screen bg-white flex flex-col items-center py-16">
-    <div className="max-w-6xl w-full mx-auto px-4">
-      <h2 className="text-5xl md:text-6xl font-bold text-center mb-4">Our Services</h2>
-      <p className="text-center text-lg md:text-xl mb-10 max-w-2xl mx-auto">
+  <section
+    id="services"
+    className="w-full min-h-screen bg-white flex flex-col items-center py-16 relative overflow-hidden"
+  >
+    {/* Background image with lower opacity */}
+    <div className="absolute inset-0 z-0" style={{ backgroundImage: 'url(/servicebg.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.8, filter: 'brightness(0.3)' }}></div>
+    {/* Overlay for blending */}
+    <div className="absolute inset-0 bg-black/40 z-0"></div>
+    <div className="max-w-6xl w-full mx-auto px-4 relative z-10">
+      <h2 className="text-5xl md:text-6xl font-bold text-center mb-4 text-white drop-shadow-lg">Our Services</h2>
+      <p className="text-center text-lg md:text-xl mb-10 max-w-2xl mx-auto text-white drop-shadow">
         Recruitment of Nurses and Assistant Nurses to Italy<br/>
         We specialize in placing qualified healthcare professionals into Italy's growing healthcare sector.
       </p>
@@ -63,7 +70,7 @@ const Services = () => (
           return (
             <div
               key={idx}
-              className="group flex flex-row items-center rounded-3xl shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 bg-white overflow-hidden h-full border border-black-300 transform p-6"
+              className="group flex flex-row items-center rounded-3xl shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 bg-white/90 overflow-hidden h-full border border-black-300 transform p-6"
             >
               <div className={`flex items-center justify-center w-16 h-16 rounded-full bg-red-500 mr-6 flex-shrink-0 transition-all duration-300 group-hover:bg-transparent`}>
                 <Icon size={32} className="text-white transition-all duration-300 group-hover:text-red-500" />

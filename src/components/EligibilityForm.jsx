@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { useForm, Controller } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
@@ -59,6 +59,13 @@ const EligibilityForm = () => {
   const [step, setStep] = useState(0);
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 0.5;
+    }
+  }, []);
 
   const {
     register,
@@ -139,16 +146,17 @@ const EligibilityForm = () => {
   const progressPercent = ((step + 1) / steps.length) * 100;
 
   return (
-    <div className="relative min-h-screen w-full overflow-hidden">
+    <div className="relative min-h-screen w-full overflow-hidden" id="eligibility-form">
       {/* ✅ Video Background */}
       <video
+        ref={videoRef}
         autoPlay
         muted
         loop
         playsInline
-        className="absolute top-0 left-0 w-full h-full object-cover z-0"
+        className="absolute top-0 left-0 w-full h-full object-cover z-0 filter brightness-70 blur-[1px]"
       >
-        <source src="/flag.mp4" type="video/mp4" />
+        <source src="/formbg.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
@@ -156,14 +164,21 @@ const EligibilityForm = () => {
 
       {/* ✅ Form Container */}
       <div className="relative z-20 flex items-center justify-center px-4 py-10 min-h-screen">
-        <div className="bg-white w-full max-w-4xl p-8 md:p-10 rounded-lg shadow-2xl text-gray-900 bg-opacity-95 backdrop-blur-md">
+        <div className="bg-white w-full max-w-4xl p-8 md:p-10 rounded-lg shadow-2xl text-gray-900 bg-opacity-95 backdrop-blur-md relative">
+          {/* Logo absolutely positioned in top-left of card */}
+          <a href="#" className="absolute top-0 left-0 z-10 flex items-center h-32 w-32 p-2">
+            <img src="/logomtg.png" alt="Logo" className="h-full object-contain" />
+          </a>
+          {/* Title */}
+          {!submitted && (
+            <h2 className="text-3xl font-bold text-green-700 mb-6 pl-20">
+              Healthcare Professional Eligibility Form
+            </h2>
+          )}
+
           {/* ✅ Title */}
           {!submitted && (
             <>
-              <h2 className="text-3xl font-bold text-center mb-6 text-green-700">
-                Healthcare Professional Eligibility Form
-              </h2>
-
               <div className="mb-6">
                 <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
                   <div

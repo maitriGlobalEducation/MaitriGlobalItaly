@@ -59,7 +59,7 @@ const WhyChooseUs = () => {
         {/* Left Side */}
         <div data-aos="fade-right">
           <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">Why Choose Us</h2>
-          <ul className="list-disc list-inside space-y-2 text-base text-gray-800 mb-8">
+          <ul className="list-disc list-outside pl-6 space-y-2 text-base text-gray-800 mb-8">
             <li>Licensed HR consultancy based in Dubai</li>
             <li>Backed by 15+ years of experience in Italy and India through Maitri Global Education</li>
             <li>Direct network of employers and healthcare providers in Italy</li>
@@ -67,9 +67,9 @@ const WhyChooseUs = () => {
             <li>Italian language training led by native-level instructors</li>
             <li>Transparent and ethical processes, guided by experienced professionals</li>
           </ul>
-          <button className="mt-2 px-8 py-3 bg-green-400 hover:bg-green-500 text-white font-semibold rounded-full flex items-center gap-2 transition">
-            Let's Connect <span className="inline-block rotate-[-45deg]">→</span>
-          </button>
+          <a href="#eligibility-form" className="mt-2 px-2 py-3 bg-green-400 hover:bg-green-500 text-white font-semibold rounded-full flex w-45 justify-center items-center gap-2 transition group">
+            Let's Connect <span className="inline-block transition-transform duration-300 rotate-[-45deg] group-hover:rotate-0">→</span>
+          </a>
         </div>
         {/* Right Side */}
         <div className="grid grid-cols-2 gap-6">
