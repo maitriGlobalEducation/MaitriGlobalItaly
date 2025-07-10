@@ -83,6 +83,12 @@ const Services = () => (
           );
         })}
       </div>
+      {/* Centered Button Below Services Grid */}
+      <div className="flex justify-center mt-10">
+        <a href="#eligibility" className="px-8 py-3 bg-red-500 text-white rounded-full shadow-lg text-lg font-semibold hover:bg-red-600 transition-all duration-200">
+          Check Eligibility
+        </a>
+      </div>
     </div>
   </section>
 )

@@ -67,7 +67,7 @@ const WhyChooseUs = () => {
             <li>Italian language training led by native-level instructors</li>
             <li>Transparent and ethical processes, guided by experienced professionals</li>
           </ul>
-          <a href="#eligibility-form" className="mt-2 px-2 py-3 bg-green-400 hover:bg-green-500 text-white font-semibold rounded-full flex w-45 justify-center items-center gap-2 transition group">
+          <a href="#eligibility-form" className="mt-2 px-2 py-3 bg-blue-400 hover:bg-blue-500 text-white font-semibold rounded-full flex w-45 justify-center items-center gap-2 transition group">
             Let's Connect <span className="inline-block transition-transform duration-300 rotate-[-45deg] group-hover:rotate-0">→</span>
           </a>
         </div>

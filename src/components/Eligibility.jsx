@@ -11,8 +11,8 @@ const eligibilityPoints = [
 
 const Eligibility = () => (
   <section className="w-full flex justify-center" id="eligibility">
-    <div className="max-w-7xl w-full mx-auto px-4 bg-white rounded-3xl shadow-md p-10 md:p-16 flex flex-col items-center border-t-8 border-blue-500 relative">
-      <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-blue-500 rounded-full p-3 shadow-lg">
+    <div className="max-w-7xl w-full mx-auto px-4 bg-white rounded-3xl shadow-2xl p-10 md:p-16 flex flex-col mb-30 items-center border-t-8 border-blue-500 relative">
+      <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-blue-500 rounded-full p-3 shadow-xl">
         <FaCheckCircle className="text-white text-4xl" />
       </div>
       <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mt-4 mb-2 text-center">Eligibility Criteria</h2>

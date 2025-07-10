@@ -43,7 +43,7 @@ const Hero = () => {
 
       {/* Background Video with border for debug */}
       <video
-        className="absolute top-0 left-0 w-full h-full object-cover z-0 filter brightness-25"
+        className="absolute top-0 left-0 w-full h-full object-cover z-0 filter brightness-60"
         src="/vid.mp4"
         autoPlay
         loop

@@ -172,7 +172,7 @@ const EligibilityForm = () => {
           {/* Title */}
           {!submitted && (
             <h2 className="text-3xl font-bold text-green-700 mb-6 pl-20">
-              Healthcare Professional Eligibility Form
+              Healthcare Professional Application Form
             </h2>
           )}
 
