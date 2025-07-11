@@ -25,7 +25,7 @@ const stats = [
     aos: 'fade-up',
   },
   {
-    label: 'Based in Dubai',
+    label: 'Based in Dubai with strong presence and partners in Italy',
     icon: <FaMapMarkerAlt size={32} className="text-green-400" />,
     bg: 'bg-green-50',
     color: 'text-green-400',
@@ -54,7 +54,7 @@ const WhyChooseUs = () => {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
 
   return (
-    <section className="w-full py-16 bg-white flex flex-col items-center" id="why-choose-us" ref={ref} data-aos="fade-up">
+    <section className="w-full py-8 md:py-12 bg-white flex flex-col items-center" id="why-choose-us" ref={ref} data-aos="fade-up">
       <div className="max-w-7xl w-full mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left Side */}
         <div data-aos="fade-right">

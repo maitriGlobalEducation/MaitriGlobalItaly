@@ -19,7 +19,7 @@ const AboutUs = () => (
           <div className="m-0 p-0">
             <p className="text-lg md:text-xl text-black font-bold m-0 p-0">Bridging Talent with Opportunity</p>
             <p className="text-lg md:text-xl text-black font-normal m-0 p-0">
-              Operating from Dubai, Maitri Global Consultancy LLC recruits skilled nurses and assistant nurses from India and the GCC to Italy. We are a subsidiary of <span className="font-bold">Maitri Global Education</span>, based in Florence, Italy, which has been working in international admissions and healthcare recruitment since 2009.<br/>
+              Operating from Dubai, Maitri Global Consultancy LLC recruits skilled nurses and assistant nurses from India and the GCC to Italy. We are a subsidiary of <span className="font-bold">Maitri Global Education</span>, based in Florence, Italy, which has been working since 2009.<br/>
               Our strong collaboration with the Italian team ensures that candidates not only secure job opportunities in Italy but also receive full <span className="font-bold">legal, linguistic, and settlement support</span> in the country through our Italian partners.
             </p>
           </div>

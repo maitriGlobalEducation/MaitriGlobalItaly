@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaYoutube, FaInstagram, FaLinkedin, FaFacebookF } from 'react-icons/fa';
+import { SiTiktok } from 'react-icons/si';
 
 const Footer = () => (
   <footer className="w-full pt-6 pb-2 flex flex-col items-center">
@@ -51,13 +52,14 @@ const Footer = () => (
             <li><a href="#" className="hover:text-blue-500 transition">Home</a></li>
             <li><a href="#about" className="hover:text-blue-500 transition">About Us</a></li>
             <li><a href="#services" className="hover:text-blue-500 transition">Services</a></li>
-            <li><a href="#Application" className="hover:text-blue-500 transition">Application Form</a></li>
+            <li><a href="#eligibility-form" className="hover:text-blue-500 transition">Application Form</a></li>
           </ul>
           <div className="flex gap-2 md:gap-4 mt-1 md:mt-2 justify-center md:justify-end">
-            <a href="#" aria-label="YouTube" className="text-gray-700 hover:text-red-500 text-lg md:text-2xl"><FaYoutube /></a>
-            <a href="#" aria-label="Instagram" className="text-gray-700 hover:text-pink-500 text-lg md:text-2xl"><FaInstagram /></a>
-            <a href="#" aria-label="LinkedIn" className="text-gray-700 hover:text-blue-700 text-lg md:text-2xl"><FaLinkedin /></a>
-            <a href="#" aria-label="Facebook" className="text-gray-700 hover:text-blue-600 text-lg md:text-2xl"><FaFacebookF /></a>
+            <a href="https://www.youtube.com/@MaitriGlobalEducation-Italy" aria-label="YouTube" className="text-gray-700 hover:text-red-500 text-lg md:text-2xl" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
+            <a href="https://www.instagram.com/maitriglobal/" aria-label="Instagram" className="text-gray-700 hover:text-pink-500 text-lg md:text-2xl" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            <a href="https://www.linkedin.com/company/maitri-global-education" aria-label="LinkedIn" className="text-gray-700 hover:text-blue-700 text-lg md:text-2xl" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+            <a href="https://www.facebook.com/maitriglobal" aria-label="Facebook" className="text-gray-700 hover:text-blue-600 text-lg md:text-2xl" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
+            <a href="https://www.tiktok.com/@maitri.global" aria-label="TikTok" className="text-gray-700 hover:text-black text-lg md:text-2xl" target="_blank" rel="noopener noreferrer"><SiTiktok /></a>
           </div>
         </div>
       </div>
