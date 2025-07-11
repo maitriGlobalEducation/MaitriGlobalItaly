@@ -15,12 +15,22 @@ const Footer = () => (
       </div>
       {/* Content Columns */}
       <div className="flex flex-col md:flex-row flex-grow w-full gap-6 md:gap-8">
-        {/* Head Office */}
+        {/* Offices */}
         <div className="flex flex-col items-center md:items-start flex-1 md:px-4 mb-2 md:mb-0 lg:pl-[240px]">
-          <h3 className="text-lg md:text-2xl font-bold mb-2 md:mb-3 text-gray-900">Head Office</h3>
-          <div className="flex items-start gap-2 mb-1 md:mb-2 w-full justify-center md:justify-start">
-            <FaMapMarkerAlt className="text-gray-700 mt-1" />
-            <span className="text-gray-800 text-xs md:text-base leading-relaxed">686, Unique World Business Center<br/>Hamsa A Building, Al Karama, Dubai, UAE</span>
+          <h3 className="text-lg md:text-2xl font-bold mb-2 md:mb-3 text-gray-900">Head Offices</h3>
+          <div className="mb-2 w-full">
+            <h4 className="text-base md:text-lg font-semibold text-gray-800 mb-1">Dubai Office</h4>
+            <div className="flex items-start gap-2 mb-1 md:mb-2 justify-center md:justify-start">
+              <FaMapMarkerAlt className="text-gray-700 mt-1" />
+              <span className="text-gray-800 text-xs md:text-base leading-relaxed">686, Unique World Business Center<br/>Hamsa A Building, Al Karama, Dubai, UAE</span>
+            </div>
+          </div>
+          <div className="w-full">
+            <h4 className="text-base md:text-lg font-semibold text-gray-800 mb-1">Italy Office</h4>
+            <div className="flex items-start gap-2 mb-1 md:mb-2 justify-center md:justify-start">
+              <FaMapMarkerAlt className="text-gray-700 mt-1" />
+              <span className="text-gray-800 text-xs md:text-base leading-relaxed">Via di Villamagna 98<br/>Florence, Italy 50126.</span>
+            </div>
           </div>
         </div>
         {/* Contact */}
