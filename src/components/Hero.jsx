@@ -59,7 +59,7 @@ const Hero = () => {
           muted
           playsInline
           preload="auto"
-          poster="/fallback.jpg"
+          poster="/hro.jpg"
           style={{
             position: "absolute",
             top: 0,
