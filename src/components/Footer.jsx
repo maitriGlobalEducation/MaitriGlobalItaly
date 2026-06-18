@@ -24,8 +24,9 @@ const Footer = () => (
             <div className="flex items-start gap-2 mb-1 md:mb-2">
               <FaMapMarkerAlt className="text-gray-700 mt-1" />
               <span className="text-gray-800 text-xs md:text-base leading-relaxed">
-                686, Unique World Business Center<br />
-                Hamsa A Building, Al Karama, Dubai, UAE
+                Maitri Global Consultancy L.L.C<br />
+                106-A64 White Swan Building Trade Center (1ST)<br />
+                Dubai, UAE 
               </span>
             </div>
           </div>
