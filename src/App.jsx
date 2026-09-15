@@ -9,7 +9,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import Footer from './components/Footer'
 import EligibilityForm from './components/EligibilityForm'
-import AuthorizedPartners from './components/Partners'
+// import AuthorizedPartners from './components/Partners'
 
 function App() {
   useEffect(() => {
@@ -36,7 +36,7 @@ Kerala, India`,
       <WhyChooseUs />
       <Eligibility /> 
       <EligibilityForm />
-      <AuthorizedPartners partners={partners} />
+      {/* <AuthorizedPartners partners={partners} /> */}
       <Footer />  
     </div>
   )
