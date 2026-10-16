@@ -3,7 +3,8 @@ import { useState } from "react";
 const testimonials = {
   students: [
     {
-      title: "Indu Baby George - A former Domus Academy student sharing her experience",
+      title:
+        "Indu Baby George - A former Domus Academy student sharing her experience",
       videoId: "uemEvbZKLUg",
       thumbnail: "https://img.youtube.com/vi/uemEvbZKLUg/hqdefault.jpg",
     },
@@ -13,12 +14,14 @@ const testimonials = {
       thumbnail: "https://img.youtube.com/vi/Y7i2JFHiLfg/hqdefault.jpg",
     },
     {
-      title: "Marianna Kurian - Polimoda - Master in Fashion Brand Management at Polimoda",
+      title:
+        "Marianna Kurian - Polimoda - Master in Fashion Brand Management at Polimoda",
       videoId: "GWl1Wo_tWUM",
       thumbnail: "https://img.youtube.com/vi/GWl1Wo_tWUM/hqdefault.jpg",
     },
     {
-      title: "Swapna Patkar is a student of Domus Academy - Master in Visual & Brand Design",
+      title:
+        "Swapna Patkar is a student of Domus Academy - Master in Visual & Brand Design",
       videoId: "2hwIH5Arj0E",
       thumbnail: "https://img.youtube.com/vi/2hwIH5Arj0E/hqdefault.jpg",
     },
@@ -33,7 +36,8 @@ const testimonials = {
       thumbnail: "https://img.youtube.com/vi/hK3re0IKjJw/hqdefault.jpg",
     },
     {
-      title: "Malavika Testimonial | Fashion Styling and Visual Merchandising | Domus Academy Milano",
+      title:
+        "Malavika Testimonial | Fashion Styling and Visual Merchandising | Domus Academy Milano",
       videoId: "jTOGH4yqP9k",
       thumbnail: "https://img.youtube.com/vi/jTOGH4yqP9k/hqdefault.jpg",
     },
@@ -53,7 +57,8 @@ const testimonials = {
       thumbnail: "https://img.youtube.com/vi/YGIb4mna3xw/hqdefault.jpg",
     },
     {
-      title: "The learning experience in Istituto Marangoni Milan & her new venture in Photography course at NABA",
+      title:
+        "The learning experience in Istituto Marangoni Milan & her new venture in Photography course at NABA",
       videoId: "Cjzdkzm_LSs",
       thumbnail: "https://img.youtube.com/vi/Cjzdkzm_LSs/hqdefault.jpg",
     },
@@ -82,7 +87,7 @@ export default function VideoTestimonials() {
 
   return (
     <section className="mx-auto w-full max-w-300 px-4 py-8">
-      <h2 className="text-center text-2xl font-semibold text-slate-900">
+      <h2 className="text-center text-2xl lg:text-3xl font-semibold text-slate-900">
         Video Testimonials
       </h2>
 
@@ -134,14 +139,21 @@ export default function VideoTestimonials() {
                     className="h-full w-full object-contain"
                   />
 
-                  <span className="absolute flex size-12 items-center justify-center rounded-full border-2 border-white bg-linear-to-r from-orange-500 to-pink-600 text-2xl text-white transition-transform group-hover:scale-110">
-                    ▶
+                  <span className="absolute flex size-12 items-center justify-center rounded-full border-2 border-white bg-linear-to-r from-orange-500 to-pink-600 text-white transition-transform group-hover:scale-110">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      className="size-5"
+                    >
+                      <path d="M8 5.14v13.72a.75.75 0 0 0 1.13.65l11-6.86a.75.75 0 0 0 0-1.28l-11-6.86A.75.75 0 0 0 8 5.14Z" />
+                    </svg>
                   </span>
                 </button>
               )}
             </div>
 
-            <div className="min-h-12 bg-orange-600 px-2 py-2 text-xs leading-4 text-white">
+            <div className="min-h-12 bg-orange-600 px-2 py-2 text-xs lg:text-sm font-medium leading-4 text-white">
               {video.title}
             </div>
           </div>
