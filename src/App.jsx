@@ -9,7 +9,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Footer from "./components/Footer";
 import EligibilityForm from "./components/EligibilityForm";
-import VideoTestimonials from "./components/Testimonials";
+// import VideoTestimonials from "./components/Testimonials";
 // import AuthorizedPartners from './components/Partners'
 
 function App() {
@@ -35,8 +35,6 @@ function App() {
       <Services />
       <WhyChooseUs />
       <Eligibility />
-
-      <VideoTestimonials />
 
       <EligibilityForm />
 
