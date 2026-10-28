@@ -1,14 +1,6 @@
 "use client";
 
-import { useState } from "react";
-import {
-  Plane,
-  Users,
-  Building2,
-  Heart,
-  MapPin,
-  ArrowRight,
-} from "lucide-react";
+import { Plane, Users, Building2, Heart } from "lucide-react";
 import VideoTitle from "./VideoTitle";
 
 const galleryItems = [
@@ -18,13 +10,6 @@ const galleryItems = [
     alt: "Nurses arriving in Italy",
     location: "Grosseto, Toscana, Italy",
     category: "Arrival at Italy",
-  },
-  {
-    type: "image",
-    src: "/images/2 2.png",
-    alt: "Our nursing community in Italy",
-    location: "Italy",
-    category: "Our Nurses",
   },
   {
     type: "image",
@@ -117,13 +102,6 @@ const galleryItems = [
     location: "Italy",
     category: "Life in Italy",
   },
-  {
-    type: "image",
-    src: "/images/12.png",
-    alt: "Nursing team in Italy",
-    location: "Italy",
-    category: "In the Community",
-  },
 ];
 
 const categories = [
@@ -195,6 +173,16 @@ export default function NursesGallery({
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Featured Image */}
+        <div className="mb-3 overflow-hidden rounded-2xl">
+          <img
+            src="/images/12.png"
+            alt="Nursing team in Italy"
+            fetchPriority="high"
+            className="block h-auto max-h-[650px] w-full object-cover object-center"
+          />
         </div>
 
         {/* Collage grid */}

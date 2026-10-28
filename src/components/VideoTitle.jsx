@@ -47,6 +47,11 @@ export default function VideoTitle({ src, alt }) {
 
     if (video.paused) {
       try {
+        // Always start from the beginning after the thumbnail seek.
+        if (video.ended || video.currentTime > 0) {
+          video.currentTime = 0;
+        }
+
         await video.play();
       } catch (error) {
         console.error("Video playback failed:", error);
