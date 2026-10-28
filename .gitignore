@@ -25,3 +25,6 @@ dist-ssr
 
 # Ignore environment variable files
 .env
+
+# Large Videos
+/public/videos/*.mp4
