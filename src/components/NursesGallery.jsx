@@ -13,14 +13,14 @@ const galleryItems = [
   },
   {
     type: "image",
-    src: "/images/2 3.png",
+    src: "/images/2-3.jpeg",
     alt: "Welcoming nurses at the airport",
     location: "Grosseto, Toscana, Italy",
     category: "At the Airport",
   },
   {
     type: "image",
-    src: "/images/3 4.png",
+    src: "/images/3-4.jpeg",
     alt: "First moments in Italy",
     location: "Bibiena, Toscana, Italy",
     category: "Arrival at Italy",
@@ -97,7 +97,7 @@ const galleryItems = [
   },
   {
     type: "image",
-    src: "/images/11.png",
+    src: "/images/11.jpeg",
     alt: "A new beginning in Italy",
     location: "Italy",
     category: "Life in Italy",
